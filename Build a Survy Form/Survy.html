@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Camper Coffe Survey Form</title>
+    <link rel="stylesheet" href="survy_styles.css" />
+  </head>
+  <body>
+    <h1>Camper Coffe Survey</h1>
+    <p>Thank you for taking your time to help us make a better cafe</p>
+    <form>
+        <fieldset for="basic-info">
+            <label for="name">Enter Your Name: <input id="name" name="name" type="text" required /></label>
+            <label for="email">Enter Your Email: <input id="email" name="email" type="email" required /></label>
+            <label for="age">Age (optional): <input id="age" name="age" type="number" min="18" max="80" /></label>
+          </fieldset>
+          <fieldset for="questionary">
+            <label for="stars">Rate the Camper cafe 1-5 stars: 
+              <select id="stars" name="stars">
+                <option value="">(select 1-5)</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+              </select>
+            </label>
+            <label>Would you recommend the Camper Cafe to your friends? </label>
+            <label><input type="radio" name="Definitely" class="inline"checked/> Definitely</label>
+            <label><input type="radio" name="Maybe" class="inline" /> Maybe
+            <label><input type="radio" name="Not sure" class="inline" /> Not sure</label>
+            <label>What are your favorites in Camper Cafe?</label>
+            <label><input type="checkbox" name="French Vanilla" class="inline" />French Vanilla</label>
+            <label><input type="checkbox" name="Caramel Macchiato" class="inline" />Caramel Macchiato</label>
+            <label><input type="checkbox" name="Donut" class="inline" />Dotnut</label>
+            <label><input type="checkbox" name="Cherry Pie" class="inline" />Cherry Pie</label>
+          </fieldset>
+          <fieldset for="suggestion">
+            <label for="suggestion">Any suggestion:
+              <textarea id="bio" name="bio" rows="3" cols="30" placeholder="I like coding on the beach..."></textarea>
+            </label>
+          </fieldset>
+          <input type="submit" value="Submit" />
+    </form>
+  </body>
+</html>
