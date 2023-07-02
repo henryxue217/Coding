@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="HTML Technical Doucment" />
+    <title>Accessibility Quiz</title>
+    <link rel="stylesheet" href="Tpage.css" />
+  </head>
+  <body>
+        <nav id="navbar">
+            <header id="topic" >HTML Document</header>
+            <a class="nav-link" href="#html_intro" >HTML Intro</a>
+            <a class="nav-link" href="#html_frame" >HTML Frame</a>
+            <a class="nav-link" href="#html_head" >HTML Head</a>
+            <a class="nav-link" href="#html_body" >HTML Body</a>
+            <a class="nav-link" href="#html_form" >HTML Form</a>
+            <a class="nav-link" href="#html_table" >HTML Table</a>
+        </nav>
+        <div class="vl"></div>
+    <main id="main-doc">
+        <section class="main-section" id="html_intro">
+            <header>HTML Intro</header>
+            <p>What is HTML:</p>
+            <ul>
+                <li>HTML stands for Hyper Text Markup Language</li>
+                <li>HTML is the standard markup language for creating Web pages</li>
+                <li>HTML describes the structure of a Web page</li>
+                <li>HTML consists of a series of elements</li>
+                <li>HTML elements tell the browser how to display the content</li>
+                <li>HTML elements label pieces of content such as "this is a heading", "this is a paragraph", "this is a link", etc.</li>
+            </ul>
+        </section>
+        <section class="main-section" id="html_frame">
+            <header>HTML Frame</header>
+            <p>Most of HTML pages include the following code:</p>
+            <pre>
+             <code>
+                &lt!DOCTYPE html>
+                &lthtml>
+                    &lthead> 
+                        &lttitle>Page Title&lttitle>
+                    &lt/head>
+                    &ltbody>
+                        &lth1>My First Heading&lt/h1>
+                    &lt/body>
+                &lt/html>
+             </code>
+            </pre>
+        </section>
+        <section class="main-section" id="html_head">
+            <header>HTML Head</header>
+            <p>The &lthead> element is a container for metadata (data about data) and is placed between the &lhtml> tag and the &lbody> tag.
+
+                Metadata is data about the HTML document. Metadata is not displayed.
+                
+                Metadata typically define the document title, character set, styles, scripts, and other meta information.
+                
+                </p>
+                <p>The folling element can go inside the &lthead>:</p>
+                <pre>
+                <code>
+                <ul>
+                    <li>&lttitle></li>
+                    <li>&ltstyle></li>
+                    <li>&ltbase></li>
+                    <li>&ltmeta></li>
+                    <li>&ltlink></li>
+                </ul>
+                </code>
+                </pre>
+        </section>
+        <section class="main-section" id="html_body">
+            <header>HTML Body</header>
+            <p>The &ltbody> tag defines the document's body.</p>
+             <p>The &ltbody> element contains all the contents of an HTML document, such as headings, paragraphs, images, hyperlinks, tables, lists, etc.</p>
+        </section>
+        <section class="main-section" id="html_form">
+            <header>HTML Form</header>
+            <p>The &ltform> tag is used to create an HTML form for user input.</p>
+            <p>The &LTform> element can contain one or more of the following form elements:</p>   
+            <pre>
+                <code>
+                    &ltform action="/action_page.php" method="get">
+                        &ltlabel for="fname">First name:&lt/label>
+                        &ltinput type="text" id="fname" name="fname">
+                        &ltlabel for="lname">Last name:&ltlabel>
+                        &ltinput type="text" id="lname" name="lname">
+                        &ltinput type="submit" value="Submit">
+                    &lt/form>
+                </code>
+            </pre> 
+            <p>Result:</p>
+            <pre>
+            <code>
+                <form action="/action_page.php" method="get">
+                    <label for="fname">First name:</label>
+                    <input type="text" id="fname" name="fname"><br><br>
+                    <label for="lname">Last name:</label>
+                    <input type="text" id="lname" name="lname"><br><br>
+                    <input type="submit" value="Submit">
+                  </form>
+            </code>
+            </pre>
+        </section>
+        <section class="main-section" id="html_table">
+            <header>HTML Table</header>
+            <p>The &lttable> tag defines an HTML table.</p>
+            <p>An HTML table consists of one <table> element and one or more &lttr>, &LTth>, and &lttd> elements.</p>
+            <p>Example code:</p>
+            <pre>
+                <code>
+                    &lttable>
+                        &lttr>
+                            &ltth>Month&lt/th>
+                            &ltth>Savings&lt/th>
+                        &lt/tr>
+                        &lttr>
+                            &lttd>January&lt/td>
+                            &lttd>$100&lt/td>
+                        &lt/tr>
+                    &lt/table>
+                </code>
+            </pre>
+            <p>Result</p>
+            <div class="table">
+                <pre>
+                <code>
+                <table>
+                    <tr>
+                      <th>Month</th>
+                      <th>Savings</th>
+                    </tr>
+                    <tr>
+                      <td>January</td>
+                      <td>$100</td>
+                    </tr>
+                  </table> 
+                  </code>
+                  </pre>
+                </div>
+        </section>
+    </main>
+  </body>
+</html>
