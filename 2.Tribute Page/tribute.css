@@ -1,0 +1,50 @@
+body{
+    background-color:bisque;
+    padding: auto;
+    
+}
+header{
+    text-align: center;
+}
+figure{
+    background-color: beige;
+    padding:5%;
+    margin:auto;
+}
+
+    #img-div{
+        width: max(100%, 20vw);
+        object-fit: cover;
+        border-radius: 10px;
+    }
+
+#img-caption{
+    text-align: center;
+}
+h3{
+    text-align: center;
+}
+#history{
+    max-width: 500px;
+    margin:auto;
+}
+/*make list elemnt word start on the same line */
+
+ul {
+  margin:auto;
+}
+
+ul li span {
+  float: left;
+  width: 100px;
+}
+li{
+    margin-top:10px;
+}
+#quote{
+margin-top:50px;
+}
+footer{
+    text-align: center;
+    font-weight:bolder;
+}
